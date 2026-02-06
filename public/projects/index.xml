@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on [YOUR NAME]</title>
+    <link>http://localhost:52654/projects/</link>
+    <description>Recent content in Projects on [YOUR NAME]</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:52654/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Belle Spa Translator</title>
+      <link>http://localhost:52654/projects/belle-spa-translator/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52654/projects/belle-spa-translator/</guid>
+      <description>&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;&#xA;&lt;p&gt;[Brief description: e.g. Spa/menu content needed translation for multilingual customers.]&lt;/p&gt;&#xA;&lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Key decision 1]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 2]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 3]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. X languages supported]&lt;/li&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. N% increase in international engagement]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;[Tech 1], [Tech 2], [Tech 3]&lt;/p&gt;&#xA;&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Demo / Live&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Repository&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>LLM Summarization</title>
+      <link>http://localhost:52654/projects/llm-summarization/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52654/projects/llm-summarization/</guid>
+      <description>&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;&#xA;&lt;p&gt;[Brief description: e.g. Long documents needed concise summaries for quick decision-making.]&lt;/p&gt;&#xA;&lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Key decision 1]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 2]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 3]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. X% time saved per document]&lt;/li&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. N documents processed daily]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;[Tech 1], [Tech 2], [Tech 3]&lt;/p&gt;&#xA;&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Demo / Live&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Repository&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>SafeClick</title>
+      <link>http://localhost:52654/projects/safeclick/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52654/projects/safeclick/</guid>
+      <description>&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;&#xA;&lt;p&gt;[Brief description of the problem: e.g. Users needed a way to verify links before clicking to avoid phishing.]&lt;/p&gt;&#xA;&lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Key decision 1]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 2]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 3]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. X% reduction in reported incidents]&lt;/li&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. N users adopted]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;[Tech 1], [Tech 2], [Tech 3]&lt;/p&gt;&#xA;&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Demo / Live&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Repository&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Transcriptor</title>
+      <link>http://localhost:52654/projects/transcriptor/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:52654/projects/transcriptor/</guid>
+      <description>&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;&#xA;&lt;p&gt;[Brief description: e.g. Need to convert audio/video to searchable text for accessibility and search.]&lt;/p&gt;&#xA;&lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Key decision 1]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 2]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 3]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. X hours of content processed]&lt;/li&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. N% accuracy improvement]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;[Tech 1], [Tech 2], [Tech 3]&lt;/p&gt;&#xA;&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Demo / Live&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Repository&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
