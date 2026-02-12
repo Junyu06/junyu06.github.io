@@ -1,0 +1,5 @@
+{{- $src := .Get "src" | default "/Junyu%20Li%20Resume.pdf" -}}
+{{- $height := .Get "height" | default "900" -}}
+<div class="resume-preview mb-8 rounded-xl overflow-hidden border border-black/10 dark:border-white/10">
+  <iframe src="{{ $src }}" width="100%" height="{{ $height }}" style="border: none; display: block;" title="Resume PDF"></iframe>
+</div>

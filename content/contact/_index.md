@@ -2,8 +2,18 @@
 title = "Contact"
 +++
 
-**Email:** [your.email@example.com]
+**Email:** [junyu1928@gmail.com](mailto:junyu1928@gmail.com)
 
-**GitHub:** [https://github.com/[YOUR_GITHUB_USERNAME]]
+**LinkedIn:** [linkedin.com/in/junyu1928](https://linkedin.com/in/junyu1928)
 
-**LinkedIn:** [https://linkedin.com/in/[YOUR_LINKEDIN_USERNAME]]
+**GitHub:** [github.com/Junyu06](https://github.com/Junyu06)
+
+---
+
+### Top Skills
+
+LLM Orchestration · Systems Design · Backend Engineering
+
+### Languages
+
+English (Native or Bilingual) · Chinese (Native or Bilingual)

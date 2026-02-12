@@ -2,36 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:52654/projects/belle-spa-translator/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/llm-summarization/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/safeclick/</loc>
+    <lastmod>2025-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/transcriptor/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:52654/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/projects/belle-spa-translator/</loc>
+    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:52654/projects/llm-summarization/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>http://localhost:52654/projects/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/contact/</loc>
   </url><url>
-    <loc>http://localhost:52654/projects/safeclick/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/education/</loc>
   </url><url>
-    <loc>http://localhost:52654/projects/transcriptor/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/experience/</loc>
   </url><url>
-    <loc>http://localhost:52654/categories/</loc>
+    <loc>http://localhost:1313/posts/</loc>
   </url><url>
-    <loc>http://localhost:52654/contact/</loc>
+    <loc>http://localhost:1313/resume/</loc>
   </url><url>
-    <loc>http://localhost:52654/education/</loc>
-  </url><url>
-    <loc>http://localhost:52654/experience/</loc>
-  </url><url>
-    <loc>http://localhost:52654/posts/</loc>
-  </url><url>
-    <loc>http://localhost:52654/resume/</loc>
-  </url><url>
-    <loc>http://localhost:52654/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

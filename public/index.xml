@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on [YOUR NAME]</title>
-    <link>http://localhost:52654/</link>
-    <description>Recent content in Home on [YOUR NAME]</description>
+    <title>Home on Junyu Li</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Junyu Li</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52654/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Belle Spa Translator</title>
-      <link>http://localhost:52654/projects/belle-spa-translator/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52654/projects/belle-spa-translator/</guid>
-      <description>&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;&#xA;&lt;p&gt;[Brief description: e.g. Spa/menu content needed translation for multilingual customers.]&lt;/p&gt;&#xA;&lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Key decision 1]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 2]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 3]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. X languages supported]&lt;/li&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. N% increase in international engagement]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;[Tech 1], [Tech 2], [Tech 3]&lt;/p&gt;&#xA;&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Demo / Live&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Repository&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <title>Long-Document LLM Pipeline for Financial Research</title>
+      <link>http://localhost:1313/projects/llm-summarization/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/llm-summarization/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Software Engineer&lt;/strong&gt; · Led the LLM component of a large-scale summarization pipeline · Sep 2025 – Dec 2025&lt;/p&gt;&#xA;&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;&#xA;&lt;p&gt;Long-form documents (10k–20k words) need to be converted into structured outputs for researchers. Raw LLM outputs can be unreliable and cause silent data corruption in downstream systems.&lt;/p&gt;&#xA;&lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Led the LLM component of a large-scale summarization pipeline that converts long-form documents (10k–20k words) into structured outputs using a MapReduce-style architecture&lt;/li&gt;&#xA;&lt;li&gt;Focused on practical system design concerns: semantic chunking, schema-constrained generation (Pydantic), local LLM deployment, and fault-tolerant, resumable workflows&lt;/li&gt;&#xA;&lt;li&gt;Designed and implemented idempotent, resumable pipeline stages with self-repair logic, allowing long-running summarization jobs to recover from partial failures without full reprocessing&lt;/li&gt;&#xA;&lt;li&gt;Engineered fast-fail validation and explicit failure boundaries, ensuring high-fidelity data extraction that maintains integrity for downstream system consumption&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stable processing of 10k–20k word documents with predictable, schema-valid outputs&lt;/li&gt;&#xA;&lt;li&gt;Production-grade fault tolerance and recovery for long-running jobs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;Python, Pydantic, semantic chunking, MapReduce-style pipeline, LLM orchestration, local LLM deployment&lt;/p&gt;</description>
     </item>
     <item>
-      <title>LLM Summarization</title>
-      <link>http://localhost:52654/projects/llm-summarization/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52654/projects/llm-summarization/</guid>
-      <description>&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;&#xA;&lt;p&gt;[Brief description: e.g. Long documents needed concise summaries for quick decision-making.]&lt;/p&gt;&#xA;&lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Key decision 1]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 2]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 3]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. X% time saved per document]&lt;/li&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. N documents processed daily]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;[Tech 1], [Tech 2], [Tech 3]&lt;/p&gt;&#xA;&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Demo / Live&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Repository&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
-      <title>SafeClick</title>
-      <link>http://localhost:52654/projects/safeclick/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52654/projects/safeclick/</guid>
-      <description>&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;&#xA;&lt;p&gt;[Brief description of the problem: e.g. Users needed a way to verify links before clicking to avoid phishing.]&lt;/p&gt;&#xA;&lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Key decision 1]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 2]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 3]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. X% reduction in reported incidents]&lt;/li&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. N users adopted]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;[Tech 1], [Tech 2], [Tech 3]&lt;/p&gt;&#xA;&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Demo / Live&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Repository&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <title>SafeClick – Phishing Detection System</title>
+      <link>http://localhost:1313/projects/safeclick/</link>
+      <pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/safeclick/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Software Engineer&lt;/strong&gt; (Applied AI &amp;amp; Security) · Hempstead, NY · April 2025 – Present&lt;br&gt;&#xA;&lt;strong&gt;1st Place Winner and Most Secure Project Award&lt;/strong&gt;, Hofstra-Pensar Hackathon&lt;/p&gt;&#xA;&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;&#xA;&lt;p&gt;Traditional ML or LLM-only approaches fail in phishing detection due to sparse signals, zero-day variants, and unreliable external evidence. Users need a security-focused system that operates under real-world constraints.&lt;/p&gt;&#xA;&lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Design and implement a security-focused phishing detection system built to operate under real-world constraints where traditional approaches fail&lt;/li&gt;&#xA;&lt;li&gt;Responsibility centers on the core AI pipeline: multi-stage URL analysis, constrained LLM reasoning, and deterministic risk scoring to ensure safe decisions even when evidence is incomplete or upstream services degrade&lt;/li&gt;&#xA;&lt;li&gt;Engineer the system with an emphasis on reliability, failure modes, and cost control rather than model novelty — treating LLMs as probabilistic components that must be constrained, validated, and supported by caching, deduplication, and explicit fallback logic&lt;/li&gt;&#xA;&lt;li&gt;Project originated from a hackathon prototype and is being iteratively engineered toward a production-ready security service, with a strong focus on system boundaries, observability, and operational robustness&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1st Place Winner and Most Secure Project Award, Hofstra-Pensar Hackathon&lt;/li&gt;&#xA;&lt;li&gt;Production-ready security service architecture with system boundaries and observability&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;Python, Pydantic, LLM orchestration, multi-stage URL analysis, caching, deduplication&lt;/p&gt;</description>
     </item>
     <item>
       <title>Transcriptor</title>
-      <link>http://localhost:52654/projects/transcriptor/</link>
+      <link>http://localhost:1313/projects/transcriptor/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52654/projects/transcriptor/</guid>
+      <guid>http://localhost:1313/projects/transcriptor/</guid>
       <description>&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;&#xA;&lt;p&gt;[Brief description: e.g. Need to convert audio/video to searchable text for accessibility and search.]&lt;/p&gt;&#xA;&lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Key decision 1]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 2]&lt;/li&gt;&#xA;&lt;li&gt;[Key decision 3]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. X hours of content processed]&lt;/li&gt;&#xA;&lt;li&gt;[METRIC]: [e.g. N% accuracy improvement]&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;[Tech 1], [Tech 2], [Tech 3]&lt;/p&gt;&#xA;&lt;h3 id=&#34;links&#34;&gt;Links&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Demo / Live&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;%5BLINK%5D&#34;&gt;Repository&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Belle SPA Inc – Internal AI Tools &amp; Automation</title>
+      <link>http://localhost:1313/projects/belle-spa-translator/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/belle-spa-translator/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;IT Support Specialist&lt;/strong&gt; · Internal AI Tools &amp;amp; Automation · Huntington, NY · May 2023 – Present&lt;/p&gt;&#xA;&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;&#xA;&lt;p&gt;Cloud-based SaaS tools for internal workflows incur recurring API costs and raise data privacy concerns for sensitive business operations. Non-technical teams need support for long-form customer inquiries and internal workflows.&lt;/p&gt;&#xA;&lt;h3 id=&#34;approach&#34;&gt;Approach&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Designed and deployed an internal LLM-powered language understanding and summarization system used daily by non-technical teams to support long-form customer inquiries and internal workflows&lt;/li&gt;&#xA;&lt;li&gt;Built a fault-tolerant LLM pipeline with schema-constrained generation (Pydantic), ensuring deterministic and reliable structured outputs for downstream business logic rather than brittle free-form text&lt;/li&gt;&#xA;&lt;li&gt;Optimized the system for local, on-prem inference on idle hardware to reduce recurring API costs and keep sensitive business data off external SaaS platforms, balancing cost, latency, and reliability tradeoffs&lt;/li&gt;&#xA;&lt;li&gt;Owned the end-to-end lifecycle of the internal AI system, including design, implementation, deployment, and ongoing iteration based on real usage, focusing on long-context handling and failure recovery&lt;/li&gt;&#xA;&lt;li&gt;In parallel, managed and maintained core office IT infrastructure (networking, CCTV, routers, Wi-Fi, and devices), including early-stage technical setup during company formation and ongoing operational support&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Reduced recurring API costs by moving to on-prem deployment&lt;/li&gt;&#xA;&lt;li&gt;Production-grade stability for internal workflows with fault tolerance and self-repair&lt;/li&gt;&#xA;&lt;li&gt;Daily use by non-technical teams for customer inquiries and internal workflows&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;Python, Pydantic, local LLM deployment, Docker, fault-tolerant pipelines, on-prem inference&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
