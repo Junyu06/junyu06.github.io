@@ -2,4 +2,4 @@
 title = "Projects"
 +++
 
-Selected projects demonstrating technical depth and impact.
+Selected production-oriented AI systems with emphasis on orchestration, validation, and reliability.

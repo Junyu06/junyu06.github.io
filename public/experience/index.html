@@ -91,6 +91,16 @@
     });
 
     
+    const navWrapper = document.querySelector('.nav-wrapper');
+    if (navWrapper) {
+      navWrapper.addEventListener('click', (e) => {
+        if (e.target.closest('a')) {
+          htmlClass.remove('open');
+        }
+      });
+    }
+
+    
     const metaTheme = document.querySelector('meta[name="theme-color"]');
     const lightBg = '#faf8f1'.replace(/"/g, '');
     const setDark = (isDark) => {
@@ -127,26 +137,32 @@
     ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/"
+        
         >Home</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/projects/"
+        
         >Projects</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/experience/"
+        aria-current="page" style="font-weight: 600; text-decoration: underline; text-underline-offset: 4px;"
         >Experience</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/education/"
+        
         >Education</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/resume/"
+        
         >Resume</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/contact/"
+        
         >Contact</a
       ></nav><nav
       class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
@@ -177,28 +193,29 @@
   <section><h2 id="safeclick--hempstead-ny">SafeClick — Hempstead, NY</h2>
 <p><strong>Software Engineer</strong> (Applied AI &amp; Security) · April 2025 – Present</p>
 <ul>
-<li>Work on the design and implementation of a security-focused phishing detection system built to operate under real-world constraints where traditional ML or LLM-only approaches fail due to sparse signals, zero-day variants, and unreliable external evidence.</li>
-<li>Responsibility centers on the core AI pipeline, including multi-stage URL analysis, constrained LLM reasoning, and deterministic risk scoring to ensure safe decisions even when evidence is incomplete or upstream services degrade.</li>
-<li>Engineered the system with an emphasis on reliability, failure modes, and cost control rather than model novelty — treating LLMs as probabilistic components that must be constrained, validated, and supported by caching, deduplication, and explicit fallback logic.</li>
-<li>Project originated from a hackathon prototype and is being iteratively engineered toward a production-ready security service, with a strong focus on system boundaries, observability, and operational robustness.</li>
+<li>Architected a multi-stage phishing detection pipeline under sparse and unreliable signals</li>
+<li>Designed constrained LLM reasoning + deterministic risk scoring</li>
+<li>Implemented validation, caching, and fallback mechanisms to prevent unsafe decisions</li>
+<li>Engineered for reliability and operational robustness rather than model novelty</li>
+<li>Led system evolution from hackathon prototype to production-ready architecture</li>
 </ul>
 <hr>
 <h2 id="belle-spa-inc--huntington-ny">Belle SPA Inc — Huntington, NY</h2>
 <p><strong>IT Support Specialist</strong> · Internal AI Tools &amp; Automation · May 2023 – Present</p>
 <ul>
-<li>Designed and deployed an internal LLM-powered language understanding and summarization system used daily by non-technical teams to support long-form customer inquiries and internal workflows.</li>
-<li>Built a fault-tolerant LLM pipeline with schema-constrained generation (Pydantic), ensuring deterministic and reliable structured outputs for downstream business logic rather than brittle free-form text.</li>
-<li>Optimized the system for local, on-prem inference on idle hardware to reduce recurring API costs and keep sensitive business data off external SaaS platforms, balancing cost, latency, and reliability tradeoffs.</li>
-<li>Owned the end-to-end lifecycle of the internal AI system, including design, implementation, deployment, and ongoing iteration based on real usage, focusing on long-context handling and failure recovery.</li>
-<li>In parallel, managed and maintained core office IT infrastructure (networking, CCTV, routers, Wi-Fi, and devices), including early-stage technical setup during company formation and ongoing operational support.</li>
+<li>Designed and deployed internal LLM-powered summarization system for daily operations</li>
+<li>Built schema-constrained pipelines (Pydantic) to ensure deterministic structured outputs</li>
+<li>Reduced recurring API costs through local on-prem inference deployment</li>
+<li>Owned end-to-end system lifecycle: design, deployment, iteration</li>
+<li>Managed core office IT infrastructure (networking, CCTV, devices)</li>
 </ul>
 <hr>
 <h2 id="lj-spa-inc--commack-ny">L&amp;J SPA Inc — Commack, NY</h2>
 <p><strong>IT Support Specialist</strong> · September 2019 – January 2023</p>
 <ul>
-<li>Served as the sole technical owner for on-premise systems at a local small business, with no dedicated IT team or external support.</li>
-<li>Maintained and troubleshot core infrastructure including routing, WiFi, and CCTV systems to ensure uninterrupted daily operations.</li>
-<li>Diagnosed and resolved system issues end-to-end, balancing reliability, cost, and operational constraints in a resource-limited environment.</li>
+<li>Sole technical owner of on-prem systems</li>
+<li>Maintained networking, WiFi, CCTV infrastructure</li>
+<li>Ensured uninterrupted business operations under resource constraints</li>
 </ul>
 </section>
 </article></main><footer

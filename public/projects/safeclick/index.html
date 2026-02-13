@@ -25,24 +25,7 @@
   
   <meta name="theme-color" />
 
-  <meta name="description" content="Software Engineer (Applied AI &amp; Security) · Hempstead, NY · April 2025 – Present
-1st Place Winner and Most Secure Project Award, Hofstra-Pensar Hackathon
-Problem
-Traditional ML or LLM-only approaches fail in phishing detection due to sparse signals, zero-day variants, and unreliable external evidence. Users need a security-focused system that operates under real-world constraints.
-Approach
-
-Design and implement a security-focused phishing detection system built to operate under real-world constraints where traditional approaches fail
-Responsibility centers on the core AI pipeline: multi-stage URL analysis, constrained LLM reasoning, and deterministic risk scoring to ensure safe decisions even when evidence is incomplete or upstream services degrade
-Engineer the system with an emphasis on reliability, failure modes, and cost control rather than model novelty — treating LLMs as probabilistic components that must be constrained, validated, and supported by caching, deduplication, and explicit fallback logic
-Project originated from a hackathon prototype and is being iteratively engineered toward a production-ready security service, with a strong focus on system boundaries, observability, and operational robustness
-
-Results
-
-1st Place Winner and Most Secure Project Award, Hofstra-Pensar Hackathon
-Production-ready security service architecture with system boundaries and observability
-
-Tech Stack
-Python, Pydantic, LLM orchestration, multi-stage URL analysis, caching, deduplication" />
+  <meta name="description" content="Multi-stage URL analysis with constrained LLM reasoning and deterministic risk scoring." />
   <meta name="author" content="Junyu Li" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.e86ae67e01e2d2055106abf72be7357c950191060e5f159f24e2790fd8237e8c.css" integrity="sha256-6GrmfgHi0gVRBqv3K&#43;c1fJUBkQYOXxWfJOJ5D9gjfow=" />
 
   
@@ -108,6 +91,16 @@ Python, Pydantic, LLM orchestration, multi-stage URL analysis, caching, deduplic
     });
 
     
+    const navWrapper = document.querySelector('.nav-wrapper');
+    if (navWrapper) {
+      navWrapper.addEventListener('click', (e) => {
+        if (e.target.closest('a')) {
+          htmlClass.remove('open');
+        }
+      });
+    }
+
+    
     const metaTheme = document.querySelector('meta[name="theme-color"]');
     const lightBg = '#faf8f1'.replace(/"/g, '');
     const setDark = (isDark) => {
@@ -144,26 +137,32 @@ Python, Pydantic, LLM orchestration, multi-stage URL analysis, caching, deduplic
     ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/"
+        
         >Home</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/projects/"
+        aria-current="page" style="font-weight: 600; text-decoration: underline; text-underline-offset: 4px;"
         >Projects</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/experience/"
+        
         >Experience</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/education/"
+        
         >Education</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/resume/"
+        
         >Resume</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/contact/"
+        
         >Contact</a
       ></nav><nav
       class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
@@ -189,23 +188,22 @@ Python, Pydantic, LLM orchestration, multi-stage URL analysis, caching, deduplic
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="my-0! pb-2.5">SafeClick – Phishing Detection System</h1><div class="text-xs antialiased opacity-60"><time>Apr 1, 2025</time></div></header>
+    <h1 class="my-0! pb-2.5">SafeClick – Phishing Detection System</h1><div class="text-xs antialiased opacity-60"></div></header>
 
-  <section><p><strong>Software Engineer</strong> (Applied AI &amp; Security) · Hempstead, NY · April 2025 – Present<br>
-<strong>1st Place Winner and Most Secure Project Award</strong>, Hofstra-Pensar Hackathon</p>
-<h3 id="problem">Problem</h3>
+  <section><h3 id="problem">Problem</h3>
 <p>Traditional ML or LLM-only approaches fail in phishing detection due to sparse signals, zero-day variants, and unreliable external evidence. Users need a security-focused system that operates under real-world constraints.</p>
 <h3 id="approach">Approach</h3>
 <ul>
-<li>Design and implement a security-focused phishing detection system built to operate under real-world constraints where traditional approaches fail</li>
-<li>Responsibility centers on the core AI pipeline: multi-stage URL analysis, constrained LLM reasoning, and deterministic risk scoring to ensure safe decisions even when evidence is incomplete or upstream services degrade</li>
-<li>Engineer the system with an emphasis on reliability, failure modes, and cost control rather than model novelty — treating LLMs as probabilistic components that must be constrained, validated, and supported by caching, deduplication, and explicit fallback logic</li>
-<li>Project originated from a hackathon prototype and is being iteratively engineered toward a production-ready security service, with a strong focus on system boundaries, observability, and operational robustness</li>
+<li>Designed a multi-stage phishing detection pipeline for URLs with constrained LLM reasoning and deterministic risk scoring</li>
+<li>Treated the LLM as a probabilistic component behind explicit validation boundaries, caching/deduplication, and fallback logic</li>
+<li>Engineered for reliability under degraded dependencies with clear failure modes and cost control</li>
+<li>Evolved a hackathon prototype toward a production-ready security service with system boundaries and observability</li>
 </ul>
 <h3 id="results">Results</h3>
 <ul>
-<li>1st Place Winner and Most Secure Project Award, Hofstra-Pensar Hackathon</li>
-<li>Production-ready security service architecture with system boundaries and observability</li>
+<li>Won 1st Place and Most Secure Project Award (Hofstra-Pensar Hackathon)</li>
+<li>Reduced nondeterminism in decision outputs through deterministic scoring and validation boundaries</li>
+<li>Improved resilience to partial failures via explicit fallbacks and pipeline-stage fault handling</li>
 </ul>
 <h3 id="tech-stack">Tech Stack</h3>
 <p>Python, Pydantic, LLM orchestration, multi-stage URL analysis, caching, deduplication</p>
@@ -213,12 +211,8 @@ Python, Pydantic, LLM orchestration, multi-stage URL analysis, caching, deduplic
 
   <nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/projects/llm-summarization/"
-      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Long-Document LLM Pipeline for Financial Research</span></a
-    ><a
-      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
-      href="http://localhost:1313/projects/transcriptor/"
-      ><span>Transcriptor</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/projects/belle-spa-translator/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Belle SPA Inc – Internal AI Tools &amp; Automation</span></a
     ></nav></article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >

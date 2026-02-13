@@ -25,23 +25,7 @@
   
   <meta name="theme-color" />
 
-  <meta name="description" content="Software Engineer · Led the LLM component of a large-scale summarization pipeline · Sep 2025 – Dec 2025
-Problem
-Long-form documents (10k–20k words) need to be converted into structured outputs for researchers. Raw LLM outputs can be unreliable and cause silent data corruption in downstream systems.
-Approach
-
-Led the LLM component of a large-scale summarization pipeline that converts long-form documents (10k–20k words) into structured outputs using a MapReduce-style architecture
-Focused on practical system design concerns: semantic chunking, schema-constrained generation (Pydantic), local LLM deployment, and fault-tolerant, resumable workflows
-Designed and implemented idempotent, resumable pipeline stages with self-repair logic, allowing long-running summarization jobs to recover from partial failures without full reprocessing
-Engineered fast-fail validation and explicit failure boundaries, ensuring high-fidelity data extraction that maintains integrity for downstream system consumption
-
-Results
-
-Stable processing of 10k–20k word documents with predictable, schema-valid outputs
-Production-grade fault tolerance and recovery for long-running jobs
-
-Tech Stack
-Python, Pydantic, semantic chunking, MapReduce-style pipeline, LLM orchestration, local LLM deployment" />
+  <meta name="description" content="MapReduce-style orchestration for 20k-word inputs with schema validation and failure recovery." />
   <meta name="author" content="Junyu Li" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.e86ae67e01e2d2055106abf72be7357c950191060e5f159f24e2790fd8237e8c.css" integrity="sha256-6GrmfgHi0gVRBqv3K&#43;c1fJUBkQYOXxWfJOJ5D9gjfow=" />
 
   
@@ -107,6 +91,16 @@ Python, Pydantic, semantic chunking, MapReduce-style pipeline, LLM orchestration
     });
 
     
+    const navWrapper = document.querySelector('.nav-wrapper');
+    if (navWrapper) {
+      navWrapper.addEventListener('click', (e) => {
+        if (e.target.closest('a')) {
+          htmlClass.remove('open');
+        }
+      });
+    }
+
+    
     const metaTheme = document.querySelector('meta[name="theme-color"]');
     const lightBg = '#faf8f1'.replace(/"/g, '');
     const setDark = (isDark) => {
@@ -143,26 +137,32 @@ Python, Pydantic, semantic chunking, MapReduce-style pipeline, LLM orchestration
     ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/"
+        
         >Home</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/projects/"
+        aria-current="page" style="font-weight: 600; text-decoration: underline; text-underline-offset: 4px;"
         >Projects</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/experience/"
+        
         >Experience</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/education/"
+        
         >Education</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/resume/"
+        
         >Resume</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/contact/"
+        
         >Contact</a
       ></nav><nav
       class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
@@ -188,22 +188,22 @@ Python, Pydantic, semantic chunking, MapReduce-style pipeline, LLM orchestration
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="my-0! pb-2.5">Long-Document LLM Pipeline for Financial Research</h1><div class="text-xs antialiased opacity-60"><time>Sep 1, 2025</time></div></header>
+    <h1 class="my-0! pb-2.5">Long-Document LLM Pipeline for Financial Research</h1><div class="text-xs antialiased opacity-60"></div></header>
 
-  <section><p><strong>Software Engineer</strong> · Led the LLM component of a large-scale summarization pipeline · Sep 2025 – Dec 2025</p>
-<h3 id="problem">Problem</h3>
+  <section><h3 id="problem">Problem</h3>
 <p>Long-form documents (10k–20k words) need to be converted into structured outputs for researchers. Raw LLM outputs can be unreliable and cause silent data corruption in downstream systems.</p>
 <h3 id="approach">Approach</h3>
 <ul>
-<li>Led the LLM component of a large-scale summarization pipeline that converts long-form documents (10k–20k words) into structured outputs using a MapReduce-style architecture</li>
-<li>Focused on practical system design concerns: semantic chunking, schema-constrained generation (Pydantic), local LLM deployment, and fault-tolerant, resumable workflows</li>
-<li>Designed and implemented idempotent, resumable pipeline stages with self-repair logic, allowing long-running summarization jobs to recover from partial failures without full reprocessing</li>
-<li>Engineered fast-fail validation and explicit failure boundaries, ensuring high-fidelity data extraction that maintains integrity for downstream system consumption</li>
+<li>Designed a MapReduce-style LLM orchestration pipeline for 10k-20k word inputs</li>
+<li>Implemented schema-constrained generation with Pydantic and explicit validation boundaries</li>
+<li>Engineered idempotent, resumable stages with self-repair logic for partial-failure recovery</li>
+<li>Deployed local LLM inference to control cost and data flow</li>
 </ul>
 <h3 id="results">Results</h3>
 <ul>
-<li>Stable processing of 10k–20k word documents with predictable, schema-valid outputs</li>
-<li>Production-grade fault tolerance and recovery for long-running jobs</li>
+<li>Consistently produced schema-valid structured outputs across long-context inputs</li>
+<li>Eliminated full-job reprocessing through stage-level recovery design</li>
+<li>Maintained predictable processing behavior across long-running workloads</li>
 </ul>
 <h3 id="tech-stack">Tech Stack</h3>
 <p>Python, Pydantic, semantic chunking, MapReduce-style pipeline, LLM orchestration, local LLM deployment</p>
@@ -213,8 +213,8 @@ Python, Pydantic, semantic chunking, MapReduce-style pipeline, LLM orchestration
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
   ><a
       class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
-      href="http://localhost:1313/projects/safeclick/"
-      ><span>SafeClick – Phishing Detection System</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+      href="http://localhost:1313/projects/belle-spa-translator/"
+      ><span>Belle SPA Inc – Internal AI Tools &amp; Automation</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     ></nav></article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >

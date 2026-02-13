@@ -25,26 +25,7 @@
   
   <meta name="theme-color" />
 
-  <meta name="description" content="Problem
-[Brief description: e.g. Need to convert audio/video to searchable text for accessibility and search.]
-Approach
-
-[Key decision 1]
-[Key decision 2]
-[Key decision 3]
-
-Results
-
-[METRIC]: [e.g. X hours of content processed]
-[METRIC]: [e.g. N% accuracy improvement]
-
-Tech Stack
-[Tech 1], [Tech 2], [Tech 3]
-Links
-
-Demo / Live
-Repository
-" />
+  <meta name="description" content="Artifact-based transcription pipeline with resumable job tracking and deterministic outputs." />
   <meta name="author" content="Junyu Li" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.e86ae67e01e2d2055106abf72be7357c950191060e5f159f24e2790fd8237e8c.css" integrity="sha256-6GrmfgHi0gVRBqv3K&#43;c1fJUBkQYOXxWfJOJ5D9gjfow=" />
 
   
@@ -110,6 +91,16 @@ Repository
     });
 
     
+    const navWrapper = document.querySelector('.nav-wrapper');
+    if (navWrapper) {
+      navWrapper.addEventListener('click', (e) => {
+        if (e.target.closest('a')) {
+          htmlClass.remove('open');
+        }
+      });
+    }
+
+    
     const metaTheme = document.querySelector('meta[name="theme-color"]');
     const lightBg = '#faf8f1'.replace(/"/g, '');
     const setDark = (isDark) => {
@@ -146,26 +137,32 @@ Repository
     ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/"
+        
         >Home</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/projects/"
+        aria-current="page" style="font-weight: 600; text-decoration: underline; text-underline-offset: 4px;"
         >Projects</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/experience/"
+        
         >Experience</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/education/"
+        
         >Education</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/resume/"
+        
         >Resume</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/contact/"
+        
         >Contact</a
       ></nav><nav
       class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
@@ -191,38 +188,31 @@ Repository
       class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
     ><article>
   <header class="mb-14">
-    <h1 class="my-0! pb-2.5">Transcriptor</h1><div class="text-xs antialiased opacity-60"><time>Jan 1, 2024</time></div></header>
+    <h1 class="my-0! pb-2.5">Transcriptor</h1><div class="text-xs antialiased opacity-60"></div></header>
 
   <section><h3 id="problem">Problem</h3>
-<p>[Brief description: e.g. Need to convert audio/video to searchable text for accessibility and search.]</p>
+<p>Audio and video content needs to be converted into searchable, reliable text artifacts for accessibility and downstream indexing. Naive transcription runs often fail mid-job or produce inconsistent outputs that are difficult to validate and resume.</p>
 <h3 id="approach">Approach</h3>
 <ul>
-<li>[Key decision 1]</li>
-<li>[Key decision 2]</li>
-<li>[Key decision 3]</li>
+<li>Designed an artifact-based transcription pipeline that treats intermediate outputs as first-class build products</li>
+<li>Implemented resumable job tracking with explicit stage boundaries to recover from partial failures without restarting</li>
+<li>Engineered deterministic, repeatable outputs to support downstream indexing and automated post-processing</li>
+<li>Added validation and guardrails around stage transitions to prevent silent corruption in stored artifacts</li>
 </ul>
 <h3 id="results">Results</h3>
 <ul>
-<li>[METRIC]: [e.g. X hours of content processed]</li>
-<li>[METRIC]: [e.g. N% accuracy improvement]</li>
+<li>Produced consistent, deterministic transcription artifacts suitable for indexing and search</li>
+<li>Eliminated full-job reprocessing by resuming from the latest valid artifact boundary after failures</li>
+<li>Maintained predictable processing behavior across long-running transcription workloads</li>
 </ul>
 <h3 id="tech-stack">Tech Stack</h3>
-<p>[Tech 1], [Tech 2], [Tech 3]</p>
-<h3 id="links">Links</h3>
-<ul>
-<li><a href="%5BLINK%5D">Demo / Live</a></li>
-<li><a href="%5BLINK%5D">Repository</a></li>
-</ul>
+<p>Artifact-based pipeline, resumable job tracking, deterministic outputs, validation boundaries</p>
 </section>
 
   <nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
   ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/projects/safeclick/"
       ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>SafeClick – Phishing Detection System</span></a
-    ><a
-      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
-      href="http://localhost:1313/projects/belle-spa-translator/"
-      ><span>Belle SPA Inc – Internal AI Tools &amp; Automation</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     ></nav></article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >

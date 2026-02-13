@@ -2,32 +2,40 @@
 title = "Resume"
 +++
 
-{{< pdf src="/Junyu%20Li%20Resume.pdf" height="900" >}}
+{{< download_button text="Download Resume" href="/Junyu%20Li%20Resume.pdf" >}}
 
-**[Download PDF](/Junyu%20Li%20Resume.pdf)**
+## Professional Summary
 
----
+Software Engineer specializing in LLM orchestration and production AI systems.  
+Experience building deterministic multi-stage workflows with validation and failure recovery.  
+Focused on reliability, cost optimization, and end-to-end system ownership.
 
-### Web version
+## Experience (Condensed)
 
-**Experience** — See [Experience](/experience/)
+### Belle SPA Inc - Applied AI Engineer
 
-**Education** — See [Education](/education/)
+- Architected and deployed an on-prem LLM system replacing SaaS tools, reducing recurring API costs and improving data control.
+- Designed schema-validated pipelines with deterministic control and stable structured outputs.
+- Optimized inference performance and production reliability across long-running internal workflows.
 
-**Projects** — See [Projects](/projects/)
+## Selected Projects
 
----
+### SafeClick - Multi-stage phishing detection
 
-### Top Skills
+- Designed constrained LLM reasoning with deterministic risk scoring.
+- Built caching and deduplication to reduce latency and API cost under concurrent load.
 
-LLM Orchestration · Systems Design · Backend Engineering
+### LLM Pipeline - Long-document summarization
 
-### Languages
+- Implemented MapReduce-style orchestration for 20k-word inputs with bounded context.
+- Engineered resumable, idempotent processing stages for reliable failure recovery.
 
-English (Native or Bilingual) · Chinese (Native or Bilingual)
+## Skills
 
-### Honors and Achievements
+- **Languages:** Python · TypeScript · SQL · C++
+- **AI Systems:** LLM Orchestration · Validation Layers · Workflow Design
+- **Infrastructure:** Docker · Local Inference · REST APIs
 
-- **1st Place Winner and Most Secure Project Award**, Hofstra-Pensar Hackathon
-- **3rd Place**, Business Competition (Foundations of Leadership and Innovation in Computing)
-- Provost's Scholars · Dean's List, Hofstra University
+## Honors
+
+1st Place Hackathon · Most Security Project Award · Dean's List

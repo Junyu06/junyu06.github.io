@@ -91,6 +91,16 @@
     });
 
     
+    const navWrapper = document.querySelector('.nav-wrapper');
+    if (navWrapper) {
+      navWrapper.addEventListener('click', (e) => {
+        if (e.target.closest('a')) {
+          htmlClass.remove('open');
+        }
+      });
+    }
+
+    
     const metaTheme = document.querySelector('meta[name="theme-color"]');
     const lightBg = '#faf8f1'.replace(/"/g, '');
     const setDark = (isDark) => {
@@ -127,26 +137,32 @@
     ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/"
+        
         >Home</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/projects/"
+        
         >Projects</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/experience/"
+        
         >Experience</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/education/"
+        
         >Education</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/resume/"
+        aria-current="page" style="font-weight: 600; text-decoration: underline; text-underline-offset: 4px;"
         >Resume</a
       ><a
         class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
         href="/contact/"
+        
         >Contact</a
       ></nav><nav
       class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
@@ -174,27 +190,42 @@
   <header class="mb-14">
     <h1 class="my-0! pb-2.5">Resume</h1>
   </header>
-  <section><div class="resume-preview mb-8 rounded-xl overflow-hidden border border-black/10 dark:border-white/10">
-  <iframe src="/Junyu%20Li%20Resume.pdf" width="100%" height="900" style="border: none; display: block;" title="Resume PDF"></iframe>
-</div>
+  <section><p>
+  <a href="/Junyu%20Li%20Resume.pdf" download>
+    <button type="button">Download Resume</button>
+  </a>
+</p>
 
-<p><strong><a href="/Junyu%20Li%20Resume.pdf">Download PDF</a></strong></p>
-<hr>
-<h3 id="web-version">Web version</h3>
-<p><strong>Experience</strong> — See <a href="/experience/">Experience</a></p>
-<p><strong>Education</strong> — See <a href="/education/">Education</a></p>
-<p><strong>Projects</strong> — See <a href="/projects/">Projects</a></p>
-<hr>
-<h3 id="top-skills">Top Skills</h3>
-<p>LLM Orchestration · Systems Design · Backend Engineering</p>
-<h3 id="languages">Languages</h3>
-<p>English (Native or Bilingual) · Chinese (Native or Bilingual)</p>
-<h3 id="honors-and-achievements">Honors and Achievements</h3>
+<h2 id="professional-summary">Professional Summary</h2>
+<p>Software Engineer specializing in LLM orchestration and production AI systems.<br>
+Experience building deterministic multi-stage workflows with validation and failure recovery.<br>
+Focused on reliability, cost optimization, and end-to-end system ownership.</p>
+<h2 id="experience-condensed">Experience (Condensed)</h2>
+<h3 id="belle-spa-inc---applied-ai-engineer">Belle SPA Inc - Applied AI Engineer</h3>
 <ul>
-<li><strong>1st Place Winner and Most Secure Project Award</strong>, Hofstra-Pensar Hackathon</li>
-<li><strong>3rd Place</strong>, Business Competition (Foundations of Leadership and Innovation in Computing)</li>
-<li>Provost&rsquo;s Scholars · Dean&rsquo;s List, Hofstra University</li>
+<li>Architected and deployed an on-prem LLM system replacing SaaS tools, reducing recurring API costs and improving data control.</li>
+<li>Designed schema-validated pipelines with deterministic control and stable structured outputs.</li>
+<li>Optimized inference performance and production reliability across long-running internal workflows.</li>
 </ul>
+<h2 id="selected-projects">Selected Projects</h2>
+<h3 id="safeclick---multi-stage-phishing-detection">SafeClick - Multi-stage phishing detection</h3>
+<ul>
+<li>Designed constrained LLM reasoning with deterministic risk scoring.</li>
+<li>Built caching and deduplication to reduce latency and API cost under concurrent load.</li>
+</ul>
+<h3 id="llm-pipeline---long-document-summarization">LLM Pipeline - Long-document summarization</h3>
+<ul>
+<li>Implemented MapReduce-style orchestration for 20k-word inputs with bounded context.</li>
+<li>Engineered resumable, idempotent processing stages for reliable failure recovery.</li>
+</ul>
+<h2 id="skills">Skills</h2>
+<ul>
+<li><strong>Languages:</strong> Python · TypeScript · SQL · C++</li>
+<li><strong>AI Systems:</strong> LLM Orchestration · Validation Layers · Workflow Design</li>
+<li><strong>Infrastructure:</strong> Docker · Local Inference · REST APIs</li>
+</ul>
+<h2 id="honors">Honors</h2>
+<p>1st Place Hackathon · Most Security Project Award · Dean&rsquo;s List</p>
 </section>
 </article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"

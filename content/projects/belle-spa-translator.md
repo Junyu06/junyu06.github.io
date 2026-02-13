@@ -1,9 +1,8 @@
 +++
 title = "Belle SPA Inc – Internal AI Tools & Automation"
-date = "2023-05-01"
+summary = "On-prem LLM system replacing SaaS tools for cost control and internal data privacy."
+portfolio_keywords = "Deployment · Cost Optimization · Internal Systems"
 +++
-
-**IT Support Specialist** · Internal AI Tools & Automation · Huntington, NY · May 2023 – Present
 
 ### Problem
 
@@ -11,17 +10,16 @@ Cloud-based SaaS tools for internal workflows incur recurring API costs and rais
 
 ### Approach
 
-- Designed and deployed an internal LLM-powered language understanding and summarization system used daily by non-technical teams to support long-form customer inquiries and internal workflows
-- Built a fault-tolerant LLM pipeline with schema-constrained generation (Pydantic), ensuring deterministic and reliable structured outputs for downstream business logic rather than brittle free-form text
-- Optimized the system for local, on-prem inference on idle hardware to reduce recurring API costs and keep sensitive business data off external SaaS platforms, balancing cost, latency, and reliability tradeoffs
-- Owned the end-to-end lifecycle of the internal AI system, including design, implementation, deployment, and ongoing iteration based on real usage, focusing on long-context handling and failure recovery
-- In parallel, managed and maintained core office IT infrastructure (networking, CCTV, routers, Wi-Fi, and devices), including early-stage technical setup during company formation and ongoing operational support
+- Designed and deployed an internal LLM system for long-form inquiries and workflow automation used by non-technical teams
+- Implemented schema-constrained generation (Pydantic) with explicit validation boundaries for reliable structured outputs
+- Deployed local, on-prem inference on idle hardware to reduce recurring API costs and keep sensitive data off external SaaS tools
+- Owned end-to-end delivery (design through deployment) with an emphasis on long-context handling and failure recovery
 
 ### Results
 
-- Reduced recurring API costs by moving to on-prem deployment
-- Production-grade stability for internal workflows with fault tolerance and self-repair
-- Daily use by non-technical teams for customer inquiries and internal workflows
+- Reduced recurring SaaS/API spend by shifting inference on-prem
+- Kept sensitive business data within internal infrastructure by avoiding external SaaS processing
+- Delivered predictable, structured outputs for daily internal workflows with failure recovery
 
 ### Tech Stack
 

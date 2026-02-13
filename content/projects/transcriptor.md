@@ -1,28 +1,26 @@
 +++
 title = "Transcriptor"
-date = "2024-01-01"
+summary = "Artifact-based transcription pipeline with resumable job tracking and deterministic outputs."
+portfolio_keywords = "Workflow Design · State Tracking · Reliability"
 +++
 
 ### Problem
 
-[Brief description: e.g. Need to convert audio/video to searchable text for accessibility and search.]
+Audio and video content needs to be converted into searchable, reliable text artifacts for accessibility and downstream indexing. Naive transcription runs often fail mid-job or produce inconsistent outputs that are difficult to validate and resume.
 
 ### Approach
 
-- [Key decision 1]
-- [Key decision 2]
-- [Key decision 3]
+- Designed an artifact-based transcription pipeline that treats intermediate outputs as first-class build products
+- Implemented resumable job tracking with explicit stage boundaries to recover from partial failures without restarting
+- Engineered deterministic, repeatable outputs to support downstream indexing and automated post-processing
+- Added validation and guardrails around stage transitions to prevent silent corruption in stored artifacts
 
 ### Results
 
-- [METRIC]: [e.g. X hours of content processed]
-- [METRIC]: [e.g. N% accuracy improvement]
+- Produced consistent, deterministic transcription artifacts suitable for indexing and search
+- Eliminated full-job reprocessing by resuming from the latest valid artifact boundary after failures
+- Maintained predictable processing behavior across long-running transcription workloads
 
 ### Tech Stack
 
-[Tech 1], [Tech 2], [Tech 3]
-
-### Links
-
-- [Demo / Live]([LINK])
-- [Repository]([LINK])
+Artifact-based pipeline, resumable job tracking, deterministic outputs, validation boundaries

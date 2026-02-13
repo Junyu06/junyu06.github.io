@@ -1,9 +1,9 @@
 +++
 title = "Long-Document LLM Pipeline for Financial Research"
-date = "2025-09-01"
+summary = "MapReduce-style orchestration for 20k-word inputs with schema validation and failure recovery."
+portfolio_keywords = "LLM Orchestration · Validation Layers · Reliability"
+weight = 10
 +++
-
-**Software Engineer** · Led the LLM component of a large-scale summarization pipeline · Sep 2025 – Dec 2025
 
 ### Problem
 
@@ -11,15 +11,16 @@ Long-form documents (10k–20k words) need to be converted into structured outpu
 
 ### Approach
 
-- Led the LLM component of a large-scale summarization pipeline that converts long-form documents (10k–20k words) into structured outputs using a MapReduce-style architecture
-- Focused on practical system design concerns: semantic chunking, schema-constrained generation (Pydantic), local LLM deployment, and fault-tolerant, resumable workflows
-- Designed and implemented idempotent, resumable pipeline stages with self-repair logic, allowing long-running summarization jobs to recover from partial failures without full reprocessing
-- Engineered fast-fail validation and explicit failure boundaries, ensuring high-fidelity data extraction that maintains integrity for downstream system consumption
+- Designed a MapReduce-style LLM orchestration pipeline for 10k-20k word inputs
+- Implemented schema-constrained generation with Pydantic and explicit validation boundaries
+- Engineered idempotent, resumable stages with self-repair logic for partial-failure recovery
+- Deployed local LLM inference to control cost and data flow
 
 ### Results
 
-- Stable processing of 10k–20k word documents with predictable, schema-valid outputs
-- Production-grade fault tolerance and recovery for long-running jobs
+- Consistently produced schema-valid structured outputs across long-context inputs
+- Eliminated full-job reprocessing through stage-level recovery design
+- Maintained predictable processing behavior across long-running workloads
 
 ### Tech Stack
 
