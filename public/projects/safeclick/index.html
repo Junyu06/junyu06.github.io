@@ -25,7 +25,7 @@
   
   <meta name="theme-color" />
 
-  <meta name="description" content="Multi-stage URL analysis with constrained LLM reasoning and deterministic risk scoring." />
+  <meta name="description" content="A production-grade phishing detection engine that bridges the gap between unreliable AI outputs and mission-critical security requirements." />
   <meta name="author" content="Junyu Li" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.e86ae67e01e2d2055106abf72be7357c950191060e5f159f24e2790fd8237e8c.css" integrity="sha256-6GrmfgHi0gVRBqv3K&#43;c1fJUBkQYOXxWfJOJ5D9gjfow=" />
 
   
@@ -190,7 +190,23 @@
   <header class="mb-14">
     <h1 class="my-0! pb-2.5">SafeClick – Phishing Detection System</h1><div class="text-xs antialiased opacity-60"></div></header>
 
-  <section><h3 id="problem">Problem</h3>
+  <section><p><strong>Project is online.</strong> Feel free to try: <a href="https://safeclick.dev/">https://safeclick.dev/</a></p>
+<h3 id="-system-architecture">🏗️ System Architecture</h3>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD
+    A[User Input: URL / Tx Memo] --&gt; B{Entry Layer / Router}
+    B --&gt;|Bypass/Cache| C[(Domain Reputation Cache)]
+    B --&gt;|New Scan| D[Multi-stage AI Pipeline]
+    
+    subgraph &#34;AI Agent Pipeline&#34;
+    D --&gt; E[Stage 1: Heuristic &amp; LLM URL Analysis]
+    E --&gt; F[Stage 2: Sandbox &amp; Evidence Collection]
+    F --&gt; G[Stage 3: Final Reasoning &amp; Verdict]
+    end
+    
+    G --&gt; H[Deterministic Logic Layer]
+    H --&gt; I[Output: Structured JSON Report]
+    C --&gt; I
+</code></pre><h3 id="problem">Problem</h3>
 <p>Traditional ML or LLM-only approaches fail in phishing detection due to sparse signals, zero-day variants, and unreliable external evidence. Users need a security-focused system that operates under real-world constraints.</p>
 <h3 id="approach">Approach</h3>
 <ul>
@@ -199,6 +215,40 @@
 <li>Engineered for reliability under degraded dependencies with clear failure modes and cost control</li>
 <li>Evolved a hackathon prototype toward a production-ready security service with system boundaries and observability</li>
 </ul>
+<h3 id="web3--blockchain-security">Web3 &amp; Blockchain Security</h3>
+<p>The system treats <strong>transaction memo phishing</strong> as a first-class threat vector. Attackers send micro-transactions (e.g. 0.000001 tokens) with malicious URLs embedded in the memo field, targeting wallet users who click without verifying. SafeClick’s pipeline treats the memo as an input vector: extracted URLs are fed into the same AI-driven URL scanner and deterministic logic layer, so Web3 users get the same structured risk report whether they paste a URL or submit a transaction memo. This bridges traditional web phishing and on-chain social engineering in one pipeline.</p>
+<h3 id="engineering-highlights">Engineering Highlights</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Implementation</th>
+          <th>Benefit</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Deduplication</strong></td>
+          <td>Firestore Transaction-based ScanJobs</td>
+          <td>Prevented 40% redundant LLM calls</td>
+      </tr>
+      <tr>
+          <td><strong>Caching</strong></td>
+          <td>Two-tier: Bloom Filter + TTL Firestore</td>
+          <td>Reduced latency by ~200ms for known domains</td>
+      </tr>
+      <tr>
+          <td><strong>Reliability</strong></td>
+          <td>Pydantic Schema Validation</td>
+          <td>0% output format error rate</td>
+      </tr>
+      <tr>
+          <td><strong>Testing</strong></td>
+          <td>38+ Unit &amp; Integration Tests</td>
+          <td>Ensured safe fail-over for insufficient evidence</td>
+      </tr>
+  </tbody>
+</table>
 <h3 id="results">Results</h3>
 <ul>
 <li>Won 1st Place and Most Secure Project Award (Hofstra-Pensar Hackathon)</li>
@@ -209,11 +259,37 @@
 <p>Python, Pydantic, LLM orchestration, multi-stage URL analysis, caching, deduplication</p>
 </section>
 
-  <nav
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/llm-orchestration"
+      >LLM Orchestration</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/security-ai"
+      >Security AI</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://localhost:1313/tags/distributed-systems"
+      >Distributed Systems</a
+    ></footer><nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/projects/belle-spa-translator/"
-      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Belle SPA Inc – Internal AI Tools &amp; Automation</span></a
-    ></nav></article></main><footer
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/projects/llm-summarization/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Long-Document LLM Pipeline for Financial Research</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://localhost:1313/projects/belle-spa-translator/"
+      ><span>Belle SPA Inc – Internal AI Tools &amp; Automation</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav><script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+<script>
+  Array.from(document.getElementsByClassName('language-mermaid')).forEach(
+    (el) => {
+      el.parentElement.outerHTML = `<div class="mermaid [&_svg]:block [&_svg]:m-auto">${el.innerHTML}</div>`;
+    },
+  );
+</script></article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
 >
   <div class="mr-auto">&copy;2026

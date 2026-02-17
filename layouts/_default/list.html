@@ -72,8 +72,16 @@ $paginator.Pages -}}
   {{- with .Params.summary -}}
   <p class="my-2 text-sm leading-relaxed opacity-80">{{- . -}}</p>
   {{- end -}}
+  {{- if .Params.tags -}}
+  <p class="my-1.5 flex flex-wrap gap-1.5">
+    {{- range .Params.tags -}}
+    <span class="inline-block rounded-md bg-orange-500/15 px-2 py-0.5 text-xs font-medium text-orange-700 dark:text-orange-300">{{- . -}}</span>
+    {{- end -}}
+  </p>
+  {{- else -}}
   {{- with .Params.portfolio_keywords -}}
   <p class="my-0 text-xs tracking-wide opacity-70">{{- . -}}</p>
+  {{- end -}}
   {{- end -}}
   {{- end -}}
   <a class="absolute inset-0 text-[0px]" href="{{- .Permalink -}}"
