@@ -1,0 +1,160 @@
+/* Site theme: matches home portal typography, colors, and links site-wide.
+   See docs/THEME.md for the design system. */
+
+/* Typography */
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.prose,
+main {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6,
+.prose .focus-heading,
+.prose .area-title {
+  font-family: 'Archivo', system-ui, sans-serif;
+}
+
+/* Light mode text colors */
+.prose {
+  color: #3f3f46;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6,
+.prose strong {
+  color: #09090b;
+}
+
+.prose p,
+.prose li {
+  color: #3f3f46;
+  line-height: 1.65;
+}
+
+/* Dark mode text colors */
+.dark .prose {
+  color: #a1a1aa;
+}
+
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4,
+.dark .prose h5,
+.dark .prose h6,
+.dark .prose strong {
+  color: #fafafa;
+}
+
+.dark .prose p,
+.dark .prose li {
+  color: #a1a1aa;
+}
+
+/* Links: match home portal nav-footer */
+.prose a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.prose a:hover {
+  text-decoration: underline;
+  color: #2563eb;
+}
+
+.dark .prose a:hover {
+  color: #60a5fa;
+}
+
+.prose a:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.dark .prose a:focus-visible {
+  outline-color: #60a5fa;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prose a {
+    transition: none;
+  }
+}
+
+/* Section pages (Resume, Contact, Experience, Education): content width + spacing */
+.site-portal {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.site-portal section {
+  max-width: 48rem;
+}
+
+.site-portal section > * + * {
+  margin-top: 1.5rem;
+}
+
+.site-portal h1,
+.site-portal h2,
+.site-portal h3,
+.site-portal h4 {
+  font-family: 'Archivo', system-ui, sans-serif;
+  color: #09090b;
+}
+
+.dark .site-portal h1,
+.dark .site-portal h2,
+.dark .site-portal h3,
+.dark .site-portal h4 {
+  color: #fafafa;
+}
+
+.site-portal p,
+.site-portal li {
+  color: #3f3f46;
+  line-height: 1.65;
+}
+
+.dark .site-portal p,
+.dark .site-portal li {
+  color: #a1a1aa;
+}
+
+.site-portal a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.site-portal a:hover {
+  text-decoration: underline;
+  color: #2563eb;
+}
+
+.dark .site-portal a:hover {
+  color: #60a5fa;
+}
+
+.site-portal a:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.dark .site-portal a:focus-visible {
+  outline-color: #60a5fa;
+}

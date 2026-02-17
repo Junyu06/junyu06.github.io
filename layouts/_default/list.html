@@ -7,7 +7,7 @@
 {{- end -}}
 
 {{- if and (not .IsHome) (eq (len $pages) 0) .Content -}}
-<article>
+<article class="site-portal">
   <header class="mb-14">
     <h1 class="my-0! pb-2.5">{{- .Title -}}</h1>
   </header>
