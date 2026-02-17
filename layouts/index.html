@@ -1,5 +1,33 @@
 {{- define "main" -}}
-<article>
+<article class="home-portal">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    .home-portal { font-family: 'Space Grotesk', system-ui, sans-serif; }
+    .home-portal h1, .home-portal .mission, .home-portal .focus-heading, .home-portal .area-title { font-family: 'Archivo', system-ui, sans-serif; }
+    .home-portal section { max-width: 48rem; }
+    .home-portal section > * + * { margin-top: 2rem; }
+    .home-portal .mission { margin-top: 2.5rem; font-size: 2rem; line-height: 1.4; font-weight: 600; color: #09090B; letter-spacing: -0.02em; }
+    .dark .home-portal .mission { color: #fafafa; }
+    .home-portal .narrative { margin-top: 3rem; color: #3F3F46; line-height: 1.65; }
+    .dark .home-portal .narrative { color: #a1a1aa; }
+    .home-portal .focus-heading { margin-top: 4rem; margin-bottom: 0.75rem; font-weight: 700; color: #09090B; }
+    .dark .home-portal .focus-heading { color: #fafafa; }
+    .home-portal .area-block { margin-top: 2.25rem; }
+    .home-portal .area-block:first-of-type { margin-top: 1.5rem; }
+    .home-portal .area-title { margin: 0 0 0.35rem 0; font-weight: 700; color: #09090B; font-size: 1rem; }
+    .dark .home-portal .area-title { color: #fafafa; }
+    .home-portal .area-desc { margin: 0; color: #3F3F46; line-height: 1.6; font-weight: 400; }
+    .dark .home-portal .area-desc { color: #a1a1aa; }
+    .home-portal .nav-footer { margin-top: 4rem; margin-bottom: 0; font-size: 0.9375rem; }
+    .home-portal .nav-footer a { text-decoration: none; cursor: pointer; margin: 0 0.65rem; color: inherit; transition: color 0.2s ease, text-decoration-color 0.2s ease; }
+    .home-portal .nav-footer a:hover { text-decoration: underline; color: #2563EB; }
+    .dark .home-portal .nav-footer a:hover { color: #60a5fa; }
+    .home-portal .nav-footer a:focus-visible { outline: 2px solid #2563EB; outline-offset: 2px; }
+    .dark .home-portal .nav-footer a:focus-visible { outline-color: #60a5fa; }
+    @media (prefers-reduced-motion: reduce) { .home-portal .nav-footer a { transition: none; } }
+  </style>
   <section>{{- .Content -}}</section>
 </article>
 {{- end -}}

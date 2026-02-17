@@ -3,6 +3,12 @@ languageCode = "en-us"
 title = "Junyu Li"
 theme = "paper"
 
+# Allow raw HTML in markdown (required for home portal mission, narrative, areas of focus)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   name = "Junyu Li"
   bio = "Applied AI Engineer | LLM Systems & Reliability"

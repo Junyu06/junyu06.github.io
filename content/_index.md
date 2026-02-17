@@ -7,26 +7,25 @@ title = "Home"
 **Software Engineer — LLM Orchestration & Production AI**  
 New York, NY
 
----
+<p class="mission">I build the infrastructure that turns probabilistic AI into reliable, everyday tools.</p>
 
-**Treat LLMs as unreliable components** — and design guardrails so they never cause silent corruption.
+<p class="narrative">I am a Software Engineer based in New York. I believe the next phase of AI isn't about better chatbots, but about engineering the invisible, deterministic systems that make AI a true utility.</p>
 
----
+<p class="focus-heading"><strong>Areas of Focus</strong></p>
 
-**Key pillars**
+<div class="area-block">
+<p class="area-title"><strong>Agentic Workflows</strong></p>
+<p class="area-desc">Moving beyond chat interfaces to build goal-oriented, autonomous agents.</p>
+</div>
 
-- **Deterministic AI Orchestration** — LLMs as probabilistic components with rigid code boundaries, validation, and fallbacks.
-- **Production-Ready Engineering** — Deduplication, multi-level caching, and failure-safe designs that ship to real users.
-- **High-Stakes Security** — Zero-day phishing, Web3 threat vectors, and systems where mistakes are not acceptable.
+<div class="area-block">
+<p class="area-title"><strong>Reliable Infrastructure</strong></p>
+<p class="area-desc">Engineering guardrails and deterministic pipelines for mission-critical AI.</p>
+</div>
 
----
+<div class="area-block">
+<p class="area-title"><strong>Security & Trust</strong></p>
+<p class="area-desc">Solving phishing and on-chain threats via AI-driven forensic analysis.</p>
+</div>
 
-* Build production-grade LLM systems with deterministic control, explicit validation, and failure recovery.
-* Engineer multi-stage AI workflows for long-context and high-volume processing.
-* Optimize cost–latency–reliability trade-offs across inference pipelines.
-* Lead small engineering teams from prototype to production systems.
-
----
-
-**Learn more →**  
-[Projects](/projects/) · [Experience](/experience/) · [Resume](/resume/) · [GitHub](https://github.com/Junyu06)
+<p class="nav-footer"><a href="/projects/">Projects</a> · <a href="/experience/">Experience</a> · <a href="/resume/">Resume</a></p>
