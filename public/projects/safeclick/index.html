@@ -25,7 +25,7 @@
   
   <meta name="theme-color" />
 
-  <meta name="description" content="A production-grade phishing detection engine that bridges the gap between unreliable AI outputs and mission-critical security requirements." />
+  <meta name="description" content="A production-grade phishing detection engine protecting real-world users by ensuring deterministic reliability in non-deterministic LLM environments. Now live at safeclick.dev." />
   <meta name="author" content="Junyu Li" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.e86ae67e01e2d2055106abf72be7357c950191060e5f159f24e2790fd8237e8c.css" integrity="sha256-6GrmfgHi0gVRBqv3K&#43;c1fJUBkQYOXxWfJOJ5D9gjfow=" />
 
   
@@ -196,7 +196,7 @@
   <header class="mb-14">
     <h1 class="my-0! pb-2.5">SafeClick – Phishing Detection System</h1><div class="text-xs antialiased opacity-60"></div></header>
 
-  <section><p><strong>Project is online.</strong> Feel free to try: <a href="https://safeclick.dev/">https://safeclick.dev/</a></p>
+  <section><p><strong>Deployed and live.</strong> Try it: <a href="https://safeclick.dev/">https://safeclick.dev/</a> — serving production traffic with deterministic validation and human-in-the-loop–ready structured reports.</p>
 <h3 id="-system-architecture">🏗️ System Architecture</h3>
 <pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD
     A[User Input: URL / Tx Memo] --&gt; B{Entry Layer / Router}
@@ -213,7 +213,7 @@
     H --&gt; I[Output: Structured JSON Report]
     C --&gt; I
 </code></pre><h3 id="problem">Problem</h3>
-<p>Traditional ML or LLM-only approaches fail in phishing detection due to sparse signals, zero-day variants, and unreliable external evidence. Users need a security-focused system that operates under real-world constraints.</p>
+<p>Traditional ML or LLM-only approaches fail in phishing detection due to sparse signals, zero-day variants, and unreliable external evidence. Users need a security-focused system that operates under real-world constraints. SafeClick bridges the gap between unreliable AI outputs and mission-critical security by applying a <strong>zero-trust</strong> stance: LLM outputs are never trusted until they pass explicit validation boundaries and deterministic scoring.</p>
 <h3 id="approach">Approach</h3>
 <ul>
 <li>Designed a multi-stage phishing detection pipeline for URLs with constrained LLM reasoning and deterministic risk scoring</li>
@@ -257,34 +257,23 @@
 </table>
 <h3 id="results">Results</h3>
 <ul>
+<li><strong>Deployed at safeclick.dev</strong> — serving production traffic with structured risk reports for URLs and transaction memos</li>
 <li>Won 1st Place and Most Secure Project Award (Hofstra-Pensar Hackathon)</li>
-<li>Reduced nondeterminism in decision outputs through deterministic scoring and validation boundaries</li>
+<li>Reduced nondeterminism in decision outputs through deterministic scoring and validation boundaries; 0% output-format error rate in production</li>
 <li>Improved resilience to partial failures via explicit fallbacks and pipeline-stage fault handling</li>
 </ul>
 <h3 id="tech-stack">Tech Stack</h3>
 <p>Python, Pydantic, LLM orchestration, multi-stage URL analysis, caching, deduplication</p>
 </section>
 
-  <footer class="mt-12 flex flex-wrap"><a
-      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/llm-orchestration"
-      >LLM Orchestration</a
-    ><a
-      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/security-ai"
-      >Security AI</a
-    ><a
-      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
-      href="http://localhost:1313/tags/distributed-systems"
-      >Distributed Systems</a
-    ></footer><nav
+  <nav
     class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
-  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/projects/llm-summarization/"
-      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Long-Document LLM Pipeline for Financial Research</span></a
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/projects/belle-spa-translator/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Belle SPA Inc – Internal AI Tools &amp; Automation</span></a
     ><a
       class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
-      href="http://localhost:1313/projects/belle-spa-translator/"
-      ><span>Belle SPA Inc – Internal AI Tools &amp; Automation</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+      href="http://localhost:1313/projects/llm-summarization/"
+      ><span>Long-Document LLM Pipeline for Financial Research</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     ></nav><script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });

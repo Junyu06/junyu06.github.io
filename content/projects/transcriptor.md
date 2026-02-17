@@ -1,7 +1,8 @@
 +++
 title = "Transcriptor"
 summary = "Artifact-based transcription pipeline with resumable job tracking and deterministic outputs."
-portfolio_keywords = "Workflow Design · State Tracking · Reliability"
+portfolio_keywords = "Workflow Design · Stateful Workflows · Job Persistence · Reliability"
+weight = -2
 +++
 
 ### Problem

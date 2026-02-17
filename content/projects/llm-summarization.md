@@ -1,8 +1,8 @@
 +++
 title = "Long-Document LLM Pipeline for Financial Research"
-summary = "MapReduce-style orchestration for 20k-word inputs with schema validation and failure recovery."
-portfolio_keywords = "LLM Orchestration · Validation Layers · Reliability"
-weight = 10
+summary = "MapReduce-style orchestration for 20k-word inputs with schema validation and failure recovery. Demonstrates complex data workflow and architecture skills."
+portfolio_keywords = "LLM Orchestration · MapReduce · Schema Validation · Reliability"
+weight = 0
 +++
 
 ### Problem

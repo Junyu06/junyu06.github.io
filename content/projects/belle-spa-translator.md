@@ -1,7 +1,8 @@
 +++
 title = "Belle SPA Inc – Internal AI Tools & Automation"
 summary = "On-prem LLM system replacing SaaS tools for cost control and internal data privacy."
-portfolio_keywords = "Deployment · Cost Optimization · Internal Systems"
+portfolio_keywords = "On-Prem · Local Deployment · Cost Optimization · Data Privacy · Internal Systems"
+weight = -1
 +++
 
 ### Problem

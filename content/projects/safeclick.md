@@ -1,13 +1,13 @@
 +++
 title = "SafeClick – Phishing Detection System"
-summary = "A production-grade phishing detection engine that bridges the gap between unreliable AI outputs and mission-critical security requirements."
-portfolio_keywords = "LLM Orchestration · Security AI · Distributed Systems"
+summary = "A production-grade phishing detection engine protecting real-world users by ensuring deterministic reliability in non-deterministic LLM environments. Now live at safeclick.dev."
+portfolio_keywords = "LLM Orchestration · Security AI · Zero-Trust · Distributed Systems"
 weight = 10
 mermaid = true
-tags = ["LLM Orchestration", "Security AI", "Distributed Systems"]
+live_url = "https://safeclick.dev"
 +++
 
-**Project is online.** Feel free to try: [https://safeclick.dev/](https://safeclick.dev/)
+**Deployed and live.** Try it: [https://safeclick.dev/](https://safeclick.dev/) — serving production traffic with deterministic validation and human-in-the-loop–ready structured reports.
 
 ### 🏗️ System Architecture
 
@@ -30,7 +30,7 @@ graph TD
 
 ### Problem
 
-Traditional ML or LLM-only approaches fail in phishing detection due to sparse signals, zero-day variants, and unreliable external evidence. Users need a security-focused system that operates under real-world constraints.
+Traditional ML or LLM-only approaches fail in phishing detection due to sparse signals, zero-day variants, and unreliable external evidence. Users need a security-focused system that operates under real-world constraints. SafeClick bridges the gap between unreliable AI outputs and mission-critical security by applying a **zero-trust** stance: LLM outputs are never trusted until they pass explicit validation boundaries and deterministic scoring.
 
 ### Approach
 
@@ -54,8 +54,9 @@ The system treats **transaction memo phishing** as a first-class threat vector. 
 
 ### Results
 
+- **Deployed at safeclick.dev** — serving production traffic with structured risk reports for URLs and transaction memos
 - Won 1st Place and Most Secure Project Award (Hofstra-Pensar Hackathon)
-- Reduced nondeterminism in decision outputs through deterministic scoring and validation boundaries
+- Reduced nondeterminism in decision outputs through deterministic scoring and validation boundaries; 0% output-format error rate in production
 - Improved resilience to partial failures via explicit fallbacks and pipeline-stage fault handling
 
 ### Tech Stack

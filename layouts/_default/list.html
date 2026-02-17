@@ -4,6 +4,8 @@
 {{- $pages := union .RegularPages .Sections -}}
 {{- if .IsHome -}}
 {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections -}}
+{{- else if eq .Section "projects" -}}
+{{- $pages = union (sort .RegularPages "Weight" "desc") .Sections -}}
 {{- end -}}
 
 {{- if and (not .IsHome) (eq (len $pages) 0) .Content -}}
@@ -57,13 +59,23 @@ $paginator.Pages -}}
 
 {{- end -}}
 
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0 {{ if and (eq $.Section "projects") (gt .Weight 0) }}rounded-xl border border-slate-200/80 bg-slate-50/70 dark:border-slate-700/80 dark:bg-slate-800/20 py-4{{ end }}">
   {{- if gt .Weight 0 -}}
   <span class="mb-1 inline-block text-xs tracking-wider text-orange-500"
     >Featured</span
   >
   {{- end -}}
-  <h2 class="my-0!">{{- .Title -}}</h2>
+  <h2 class="my-0! {{ if and (eq $.Section "projects") (gt .Weight 0) }}font-semibold{{ end }}">
+    {{- if eq $.Section "projects" -}}
+    <a
+      class="relative z-10 no-underline hover:underline underline-offset-4"
+      href="{{- .Permalink -}}"
+      >{{- .Title -}}</a
+    >
+    {{- else -}}
+    {{- .Title -}}
+    {{- end -}}
+  </h2>
   {{- if ne .Section "projects" -}}
   <time class="text-xs antialiased opacity-60"
     >{{- .Date | time.Format ":date_medium" -}}</time
@@ -72,6 +84,18 @@ $paginator.Pages -}}
   {{- with .Params.summary -}}
   <p class="my-2 text-sm leading-relaxed opacity-80">{{- . -}}</p>
   {{- end -}}
+  {{- if and (eq $.Section "projects") .Params.live_url -}}
+  <p class="my-1.5">
+    <a href="{{ .Params.live_url }}" target="_blank" rel="noopener noreferrer" class="relative z-10 inline-flex items-center gap-1 text-xs font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 underline underline-offset-2"
+      ><svg width="14" height="14" class="shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>Visit safeclick.dev</a
+    >
+  </p>
+  {{- end -}}
+  {{- if eq $.Section "projects" -}}
+  {{- with .Params.portfolio_keywords -}}
+  <p class="my-0 text-xs tracking-wide opacity-70">{{- . -}}</p>
+  {{- end -}}
+  {{- else -}}
   {{- if .Params.tags -}}
   <p class="my-1.5 flex flex-wrap gap-1.5">
     {{- range .Params.tags -}}
@@ -84,9 +108,12 @@ $paginator.Pages -}}
   {{- end -}}
   {{- end -}}
   {{- end -}}
-  <a class="absolute inset-0 text-[0px]" href="{{- .Permalink -}}"
+  {{- end -}}
+  {{- if ne $.Section "projects" -}}
+  <a class="absolute inset-0 z-0 text-[0px]" href="{{- .Permalink -}}"
     >{{- .Title -}}</a
   >
+  {{- end -}}
 </section>
 {{- end -}}
 
