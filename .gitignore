@@ -1,1 +1,26 @@
+# OS
 .DS_Store
+Thumbs.db
+
+# Dependencies (from uipro-cli / skill install)
+node_modules/
+package.json
+package-lock.json
+
+# Cursor / IDE (optional: remove .cursor if you want to commit the UI UX Pro Max skill)
+.cursor/
+
+# Hugo
+resources/_gen/
+*.log
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Editor
+.idea/
+*.swp
+*.swo
+*~

@@ -12,17 +12,23 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/distributed-systems/</loc>
+  </url><url>
     <loc>http://localhost:1313/education/</loc>
   </url><url>
     <loc>http://localhost:1313/experience/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/tags/llm-orchestration/</loc>
+  </url><url>
     <loc>http://localhost:1313/posts/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
   </url><url>
     <loc>http://localhost:1313/resume/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/security-ai/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url><url>
