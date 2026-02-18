@@ -5,6 +5,13 @@ portfolio_keywords = "Workflow Design · Stateful Workflows · Job Persistence �
 weight = -2
 +++
 
+**GitHub Repo:** [Junyu06/Transcriptor](https://github.com/Junyu06/Transcriptor)
+
+### Demo
+
+![Transcriptor Screenshot](/images/projects/Transcriptor.png)
+
+
 ### Problem
 
 Audio and video content needs to be converted into searchable, reliable text artifacts for accessibility and downstream indexing. Naive transcription runs often fail mid-job or produce inconsistent outputs that are difficult to validate and resume.

@@ -9,6 +9,11 @@ live_url = "https://safeclick.dev"
 
 **Deployed and live.** Try it: [https://safeclick.dev/](https://safeclick.dev/) — serving production traffic with deterministic validation and human-in-the-loop–ready structured reports.
 
+### Demo
+
+![SafeClick Screenshot](/images/projects/Safeclick.png)
+
+
 ### 🏗️ System Architecture
 
 ```mermaid

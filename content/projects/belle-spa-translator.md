@@ -5,6 +5,13 @@ portfolio_keywords = "On-Prem · Local Deployment · Cost Optimization · Data P
 weight = -1
 +++
 
+**GitHub Repo:** [Junyu06/LLM-Translator](https://github.com/Junyu06/LLM-Translator)
+
+### Demo
+
+![Translator Screenshot](/images/projects/translator.png)
+
+
 ### Problem
 
 Cloud-based SaaS tools for internal workflows incur recurring API costs and raise data privacy concerns for sensitive business operations. Non-technical teams need support for long-form customer inquiries and internal workflows.

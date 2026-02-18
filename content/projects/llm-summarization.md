@@ -5,6 +5,8 @@ portfolio_keywords = "LLM Orchestration · MapReduce · Schema Validation · Rel
 weight = 0
 +++
 
+**GitHub Repo:** [Junyu06/LLM-Pipeline](https://github.com/Junyu06/LLM-Pipeline)
+
 ### Problem
 
 Long-form documents (10k–20k words) need to be converted into structured outputs for researchers. Raw LLM outputs can be unreliable and cause silent data corruption in downstream systems.
