@@ -25,7 +25,7 @@
   
   <meta name="theme-color" />
 
-  <meta name="description" content="A production-grade phishing detection engine protecting real-world users by ensuring deterministic reliability in non-deterministic LLM environments. Now live at safeclick.dev." />
+  <meta name="description" content="A production-grade zero-day phishing detection engine that combines probabilistic AI with deterministic security logic. Now live at safeclick.dev." />
   <meta name="author" content="Junyu Li" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.e86ae67e01e2d2055106abf72be7357c950191060e5f159f24e2790fd8237e8c.css" integrity="sha256-6GrmfgHi0gVRBqv3K&#43;c1fJUBkQYOXxWfJOJ5D9gjfow=" />
 
   
@@ -171,23 +171,33 @@
         
         >Contact</a
       ></nav><nav
-      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14"
     >
       <a
-        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        class="social-icon h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6 dark:invert"
         style="--url: url(./github.svg)"
         href="https://github.com/Junyu06"
         target="_blank"
         rel="me"
       >github</a>
       <a
-        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        class="social-icon h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6 dark:invert"
         style="--url: url(./linkedin.svg)"
         href="https://linkedin.com/in/junyu1928"
         target="_blank"
         rel="me"
-      >linkedin</a>
-    </nav>
+      >linkedin</a><a
+        class="h-7 w-7 inline-flex items-center justify-center text-zinc-700 hover:text-zinc-900 dark:text-zinc-200 dark:hover:text-white transition-colors"
+        href="mailto:junyu1928@gmail.com"
+        rel="me"
+        aria-label="Email"
+        title="junyu1928@gmail.com"
+      >
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+          <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a></nav>
   </div>
 </header>
 <main
@@ -219,6 +229,7 @@
 <h3 id="approach">Approach</h3>
 <ul>
 <li>Designed a multi-stage phishing detection pipeline for URLs with constrained LLM reasoning and deterministic risk scoring</li>
+<li>Implemented deterministic security logic to ensure stable verdict behavior in non-deterministic model environments</li>
 <li>Treated the LLM as a probabilistic component behind explicit validation boundaries, caching/deduplication, and fallback logic</li>
 <li>Engineered for reliability under degraded dependencies with clear failure modes and cost control</li>
 <li>Evolved a hackathon prototype toward a production-ready security service with system boundaries and observability</li>

@@ -11,9 +11,10 @@ theme = "paper"
 
 [params]
   name = "Junyu Li"
-  bio = "Applied AI Engineer | LLM Systems & Reliability"
+  bio = "Lead Software Engineer | LLM Systems & Reliability"
   github = "Junyu06"
   linkedin = "junyu1928"
+  email = "junyu1928@gmail.com"
 
 [menu]
   [[menu.main]]

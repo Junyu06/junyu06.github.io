@@ -1,7 +1,7 @@
 +++
 title = "SafeClick – Phishing Detection System"
-summary = "A production-grade phishing detection engine protecting real-world users by ensuring deterministic reliability in non-deterministic LLM environments. Now live at safeclick.dev."
-portfolio_keywords = "LLM Orchestration · Security AI · Zero-Trust · Distributed Systems"
+summary = "A production-grade zero-day phishing detection engine that combines probabilistic AI with deterministic security logic. Now live at safeclick.dev."
+portfolio_keywords = "Zero-day Phishing Detection · Deterministic Security Logic · LLM Orchestration · Security AI"
 weight = 10
 mermaid = true
 live_url = "https://safeclick.dev"
@@ -40,6 +40,7 @@ Traditional ML or LLM-only approaches fail in phishing detection due to sparse s
 ### Approach
 
 - Designed a multi-stage phishing detection pipeline for URLs with constrained LLM reasoning and deterministic risk scoring
+- Implemented deterministic security logic to ensure stable verdict behavior in non-deterministic model environments
 - Treated the LLM as a probabilistic component behind explicit validation boundaries, caching/deduplication, and fallback logic
 - Engineered for reliability under degraded dependencies with clear failure modes and cost control
 - Evolved a hackathon prototype toward a production-ready security service with system boundaries and observability

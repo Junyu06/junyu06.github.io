@@ -3,13 +3,14 @@ title = "Experience"
 +++
 
 ## SafeClick — Hempstead, NY
-**Software Engineer** (Applied AI & Security) · April 2025 – Present
+**Lead Software Engineer** (Applied AI & Security) · April 2025 – Present
 
+- Led a 5-engineer team to evolve SafeClick from hackathon prototype to production-ready architecture
 - Architected a multi-stage phishing detection pipeline under sparse and unreliable signals
 - Designed constrained LLM reasoning + deterministic risk scoring
 - Implemented validation, caching, and fallback mechanisms to prevent unsafe decisions
 - Engineered for reliability and operational robustness rather than model novelty
-- Led system evolution from hackathon prototype to production-ready architecture
+- Built URL structure analysis -> sandbox evidence -> verdict flow with deterministic decision boundaries
 
 ---
 

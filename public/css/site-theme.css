@@ -158,3 +158,52 @@ main {
 .dark .site-portal a:focus-visible {
   outline-color: #60a5fa;
 }
+
+/* Resume download button */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.6rem;
+  border: 1px solid #d4d4d8;
+  background: #ffffff;
+  color: #18181b;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #f4f4f5;
+  border-color: #a1a1aa;
+  text-decoration: none;
+}
+
+.download-btn:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.download-btn-icon {
+  width: 1rem !important;
+  height: 1rem !important;
+  min-width: 1rem;
+  min-height: 1rem;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.dark .download-btn {
+  border-color: #52525b;
+  background: #18181b;
+  color: #fafafa;
+}
+
+.dark .download-btn:hover {
+  background: #27272a;
+  border-color: #71717a;
+}

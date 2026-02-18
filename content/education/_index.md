@@ -3,11 +3,13 @@ title = "Education"
 +++
 
 ## Hofstra University — Hempstead, NY
-**Master of Science in Computer Science** · Jan 2025 – Dec 2025 · GPA 4.0/4.0  
+**Master of Science in Computer Science** · Jan 2025 – Dec 2025 · **GPA 4.0 / 4.0**  
 Concentration in Artificial Intelligence
 
-**Bachelor of Science in Computer Science** · Sep 2022 – May 2025 · GPA 3.8/4.0  
+**Bachelor of Science in Computer Science** · Sep 2022 – May 2025 · **GPA 3.8 / 4.0**  
 Concentration in Networking and Cybersecurity
+
+Honors: Provost's Scholars · Dean's List
 
 ---
 

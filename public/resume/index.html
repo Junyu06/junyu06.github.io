@@ -171,23 +171,33 @@
         
         >Contact</a
       ></nav><nav
-      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14"
     >
       <a
-        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        class="social-icon h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6 dark:invert"
         style="--url: url(./github.svg)"
         href="https://github.com/Junyu06"
         target="_blank"
         rel="me"
       >github</a>
       <a
-        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        class="social-icon h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6 dark:invert"
         style="--url: url(./linkedin.svg)"
         href="https://linkedin.com/in/junyu1928"
         target="_blank"
         rel="me"
-      >linkedin</a>
-    </nav>
+      >linkedin</a><a
+        class="h-7 w-7 inline-flex items-center justify-center text-zinc-700 hover:text-zinc-900 dark:text-zinc-200 dark:hover:text-white transition-colors"
+        href="mailto:junyu1928@gmail.com"
+        rel="me"
+        aria-label="Email"
+        title="junyu1928@gmail.com"
+      >
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+          <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a></nav>
   </div>
 </header>
 <main
@@ -197,32 +207,50 @@
     <h1 class="my-0! pb-2.5">Resume</h1>
   </header>
   <section><p>
-  <a href="/Junyu%20Li%20Resume.pdf" download>
-    <button type="button">Download Resume</button>
+  <a class="download-btn not-prose" href="/Junyu%20Li%20Resume.pdf" download aria-label="Download resume PDF">
+    <span>Download Resume</span>
+    <svg class="download-btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 4v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="m8 10 4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5 18h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
   </a>
 </p>
 
 <h2 id="professional-summary">Professional Summary</h2>
-<p>Software Engineer specializing in LLM orchestration and production AI systems.<br>
+<p>Lead Software Engineer specializing in LLM orchestration and production AI systems.<br>
 Experience building deterministic multi-stage workflows with validation and failure recovery.<br>
-Focused on reliability, cost optimization, and end-to-end system ownership.</p>
+Focused on reliability, cost optimization, and end-to-end ownership from prototype to production.</p>
 <h2 id="experience-condensed">Experience (Condensed)</h2>
+<h3 id="safeclick---lead-software-engineer">SafeClick - Lead Software Engineer</h3>
+<ul>
+<li>Led a 5-engineer team to evolve SafeClick from hackathon prototype into a production phishing-detection service.</li>
+<li>Built a deterministic security logic layer over probabilistic LLM outputs to improve reliability under sparse, zero-day signals.</li>
+<li>Designed URL structure analysis -&gt; sandbox evidence -&gt; final verdict pipeline with explicit validation and safe fallbacks.</li>
+</ul>
 <h3 id="belle-spa-inc---applied-ai-engineer">Belle SPA Inc - Applied AI Engineer</h3>
 <ul>
 <li>Architected and deployed an on-prem LLM system replacing SaaS tools, reducing recurring API costs and improving data control.</li>
-<li>Designed schema-validated pipelines with deterministic control and stable structured outputs.</li>
+<li>Built schema-constrained pipelines with Pydantic for deterministic structured outputs in internal AI workflows.</li>
 <li>Optimized inference performance and production reliability across long-running internal workflows.</li>
 </ul>
 <h2 id="selected-projects">Selected Projects</h2>
-<h3 id="safeclick---multi-stage-phishing-detection">SafeClick - Multi-stage phishing detection</h3>
-<ul>
-<li>Designed constrained LLM reasoning with deterministic risk scoring.</li>
-<li>Built caching and deduplication to reduce latency and API cost under concurrent load.</li>
-</ul>
 <h3 id="llm-pipeline---long-document-summarization">LLM Pipeline - Long-document summarization</h3>
 <ul>
 <li>Implemented MapReduce-style orchestration for 20k-word inputs with bounded context.</li>
-<li>Engineered resumable, idempotent processing stages for reliable failure recovery.</li>
+<li>Engineered idempotent and resumable stages for robust partial-failure recovery.</li>
+<li>Enforced Pydantic schema validation to prevent silent corruption in downstream workflows.</li>
+</ul>
+<h3 id="transcriptor---artifact-based-workflow-system">Transcriptor - Artifact-based workflow system</h3>
+<ul>
+<li>Designed stateful artifact boundaries for deterministic transcription outputs.</li>
+<li>Added resumable stage transitions to avoid full-job reruns after failures.</li>
+</ul>
+<h2 id="education">Education</h2>
+<h3 id="hofstra-university">Hofstra University</h3>
+<ul>
+<li>Master of Science in Computer Science, Jan 2025 - Dec 2025, <strong>GPA 4.0 / 4.0</strong></li>
+<li>Bachelor of Science in Computer Science, Sep 2022 - May 2025, <strong>GPA 3.8 / 4.0</strong></li>
 </ul>
 <h2 id="skills">Skills</h2>
 <ul>
@@ -231,7 +259,7 @@ Focused on reliability, cost optimization, and end-to-end system ownership.</p>
 <li><strong>Infrastructure:</strong> Docker · Local Inference · REST APIs</li>
 </ul>
 <h2 id="honors">Honors</h2>
-<p>1st Place Hackathon · Most Security Project Award · Dean&rsquo;s List</p>
+<p>1st Place Hackathon · Most Secure Project Award · Provost&rsquo;s Scholars · Dean&rsquo;s List</p>
 </section>
 </article></main><footer
   class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"

@@ -171,23 +171,33 @@
         
         >Contact</a
       ></nav><nav
-      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14 dark:invert"
+      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14"
     >
       <a
-        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        class="social-icon h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6 dark:invert"
         style="--url: url(./github.svg)"
         href="https://github.com/Junyu06"
         target="_blank"
         rel="me"
       >github</a>
       <a
-        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        class="social-icon h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6 dark:invert"
         style="--url: url(./linkedin.svg)"
         href="https://linkedin.com/in/junyu1928"
         target="_blank"
         rel="me"
-      >linkedin</a>
-    </nav>
+      >linkedin</a><a
+        class="h-7 w-7 inline-flex items-center justify-center text-zinc-700 hover:text-zinc-900 dark:text-zinc-200 dark:hover:text-white transition-colors"
+        href="mailto:junyu1928@gmail.com"
+        rel="me"
+        aria-label="Email"
+        title="junyu1928@gmail.com"
+      >
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+          <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a></nav>
   </div>
 </header>
 <main
@@ -197,13 +207,14 @@
     <h1 class="my-0! pb-2.5">Experience</h1>
   </header>
   <section><h2 id="safeclick--hempstead-ny">SafeClick — Hempstead, NY</h2>
-<p><strong>Software Engineer</strong> (Applied AI &amp; Security) · April 2025 – Present</p>
+<p><strong>Lead Software Engineer</strong> (Applied AI &amp; Security) · April 2025 – Present</p>
 <ul>
+<li>Led a 5-engineer team to evolve SafeClick from hackathon prototype to production-ready architecture</li>
 <li>Architected a multi-stage phishing detection pipeline under sparse and unreliable signals</li>
 <li>Designed constrained LLM reasoning + deterministic risk scoring</li>
 <li>Implemented validation, caching, and fallback mechanisms to prevent unsafe decisions</li>
 <li>Engineered for reliability and operational robustness rather than model novelty</li>
-<li>Led system evolution from hackathon prototype to production-ready architecture</li>
+<li>Built URL structure analysis -&gt; sandbox evidence -&gt; verdict flow with deterministic decision boundaries</li>
 </ul>
 <hr>
 <h2 id="belle-spa-inc--huntington-ny">Belle SPA Inc — Huntington, NY</h2>
