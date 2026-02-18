@@ -113,6 +113,7 @@ main {
 .site-portal h3,
 .site-portal h4 {
   font-family: 'Archivo', system-ui, sans-serif;
+  font-weight: 600;
   color: #09090b;
 }
 
@@ -127,6 +128,11 @@ main {
 .site-portal li {
   color: #3f3f46;
   line-height: 1.65;
+}
+
+.site-portal strong {
+  color: inherit;
+  font-weight: 500;
 }
 
 .dark .site-portal p,
@@ -160,27 +166,50 @@ main {
 }
 
 /* Resume download button */
+.download-btn-wrap {
+  margin: 0;
+  text-align: left;
+}
+
 .download-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  gap: 0.5rem;
-  padding: 0.6rem 0.9rem;
-  border-radius: 0.6rem;
-  border: 1px solid #d4d4d8;
-  background: #ffffff;
-  color: #18181b;
-  font-weight: 600;
-  line-height: 1;
+  gap: 0.28rem !important;
+  padding: 0.31rem 0.5rem !important;
+  border-radius: 0.82rem;
+  border: 1px solid #111827;
+  background: #111827;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.74rem !important;
+  line-height: 1 !important;
   text-decoration: none;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease,
+    transform 0.15s ease;
 }
 
+
 .download-btn:hover {
-  background: #f4f4f5;
-  border-color: #a1a1aa;
+  background: #1f2937;
+  border-color: #1f2937;
+  color: #ffffff;
   text-decoration: none;
+}
+
+.download-btn span {
+  text-align: center;
+  margin-left: 0.63rem;
+  font-size: 0.74rem !important;
+  line-height: 1 !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+}
+
+.download-btn svg {
+  color: #ffffff !important;
 }
 
 .download-btn:focus-visible {
@@ -189,21 +218,64 @@ main {
 }
 
 .download-btn-icon {
-  width: 1rem !important;
-  height: 1rem !important;
-  min-width: 1rem;
-  min-height: 1rem;
+  width: 0.98rem !important;
+  height: 0.98rem !important;
+  min-width: 0.98rem;
+  min-height: 0.98rem;
   display: inline-block;
   flex: 0 0 auto;
 }
 
 .dark .download-btn {
-  border-color: #52525b;
-  background: #18181b;
-  color: #fafafa;
+  border-color: #f1f5f9;
+  background: #f8fafc;
+  color: #000000;
 }
 
 .dark .download-btn:hover {
-  background: #27272a;
-  border-color: #71717a;
+  background: #e2e8f0;
+  border-color: #e2e8f0;
+  color: #000000;
+}
+
+.dark .download-btn span {
+  color: #000000 !important;
+}
+
+.dark .download-btn svg {
+  color: #000000 !important;
+}
+
+/* Keep button text in true inverse color; override generic section link color rule */
+.site-portal a.download-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 0.31rem 0.5rem !important;
+  color: #ffffff !important;
+}
+
+.site-portal a.download-btn:hover {
+  color: #ffffff !important;
+}
+
+.dark .site-portal a.download-btn {
+  color: #000000 !important;
+}
+
+.dark .site-portal a.download-btn:hover {
+  color: #000000 !important;
+}
+
+.social-email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.social-email svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }

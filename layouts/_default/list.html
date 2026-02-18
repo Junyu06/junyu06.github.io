@@ -9,10 +9,13 @@
 {{- end -}}
 
 {{- if and (not .IsHome) (eq (len $pages) 0) .Content -}}
+{{- $hidePortalTitle := in (slice "experience" "education" "resume" "contact") .Section -}}
 <article class="site-portal">
+  {{- if not $hidePortalTitle -}}
   <header class="mb-14">
     <h1 class="my-0! pb-2.5">{{- .Title -}}</h1>
   </header>
+  {{- end -}}
   <section>{{- .Content -}}</section>
 </article>
 {{- else -}}
