@@ -4,7 +4,7 @@ title = "Home"
 
 # Junyu Li
 
-**Lead Software Engineer — LLM Orchestration & Production AI**  
+**Software Engineer — LLM Orchestration & Production AI**  
 New York, NY
 
 <p class="mission">I build the infrastructure that turns probabilistic AI into reliable, everyday tools.</p>
