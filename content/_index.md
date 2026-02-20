@@ -9,7 +9,7 @@ New York, NY
 
 <p class="mission">I build the infrastructure that turns probabilistic AI into reliable, everyday tools.</p>
 
-<p class="narrative">I am a Lead Software Engineer based in New York. I believe the next phase of AI isn't about better chatbots, but about engineering the invisible, deterministic systems that make AI a true utility.</p>
+<p class="narrative">I am a Software Engineer based in New York. I believe the next phase of AI isn't about better chatbots, but about engineering the invisible, deterministic systems that make AI a true utility.</p>
 
 <p class="focus-heading"><strong>Areas of Focus</strong></p>
 
