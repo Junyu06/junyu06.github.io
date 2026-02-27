@@ -5,29 +5,23 @@ title = "Experience"
 ## SafeClick — Hempstead, NY
 **Lead Software Engineer** (Applied AI & Security) · April 2025 – Present
 
-- Led a 5-engineer team to evolve SafeClick from hackathon prototype to production-ready architecture
-- Architected a multi-stage phishing detection pipeline under sparse and unreliable signals
-- Designed constrained LLM reasoning + deterministic risk scoring
-- Implemented validation, caching, and fallback mechanisms to prevent unsafe decisions
-- Engineered for reliability and operational robustness rather than model novelty
-- Built URL structure analysis -> sandbox evidence -> verdict flow with deterministic decision boundaries
-
+- Designed and engineered a multi-stage AI-powered phishing detection system (URL structure analysis → sandbox evidence → LLM-assisted interpretation) to systematically reduce false negatives in zero-day attack scenarios.
+- Implemented deterministic, code-enforced risk scoring and schema-constrained validation (Pydantic) to bound probabilistic LLM outputs and preserve security guarantees.
+- Architected domain reputation caching and scan-job deduplication, reducing inference latency and API costs under concurrent workloads.
+- Led a 5-engineer team through full-stack integration, evolving the system from a hackathon prototype into a production-oriented security service.
 ---
 
 ## Belle SPA Inc — Huntington, NY
-**IT Support Specialist** · Internal AI Tools & Automation · May 2023 – Present
+**IT Support Specialist** · On-Prem AI Deployment · May 2023 – Present
 
-- Designed and deployed internal LLM-powered summarization system for daily operations
-- Built schema-constrained pipelines (Pydantic) to ensure deterministic structured outputs
-- Reduced recurring API costs through local on-prem inference deployment
-- Owned end-to-end system lifecycle: design, deployment, iteration
-- Managed core office IT infrastructure (networking, CCTV, devices)
+- Designed and deployed a local LLM-based translation tool using Ollama to support daily customer communication for a non-technical team.
+- Configured on-prem model inference on idle in-house hardware to reduce reliance on paid SaaS translators and keep sensitive business data internal.
+- Managed system setup, deployment, and reliability improvements based on real operational use, balancing cost, latency, and operational simplicity.
+- Maintained core office IT infrastructure (networking, CCTV, routers, Wi-Fi, devices) to ensure uninterrupted operations.
 
 ---
 
 ## L&J SPA Inc — Commack, NY
 **IT Support Specialist** · September 2019 – January 2023
 
-- Sole technical owner of on-prem systems
-- Maintained networking, WiFi, CCTV infrastructure
-- Ensured uninterrupted business operations under resource constraints
+- Maintained networking, Wi-Fi, and CCTV infrastructure to ensure uninterrupted business operations.
