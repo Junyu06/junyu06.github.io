@@ -29,5 +29,20 @@
     @media (prefers-reduced-motion: reduce) { .home-portal .nav-footer a { transition: none; } }
   </style>
   <section>{{- .Content -}}</section>
+  {{- $posts := where site.RegularPages "Section" "blog" -}}
+  {{- if gt (len $posts) 0 -}}
+  <section class="mt-16">
+    <p class="focus-heading"><strong>Latest Blog</strong></p>
+    {{- range first 5 $posts -}}
+    <div class="area-block">
+      <time class="text-xs antialiased opacity-60">{{- .Date | time.Format ":date_medium" -}}</time>
+      <p class="area-title"><a href="{{- .Permalink -}}">{{- .Title -}}</a></p>
+      {{- with .Params.summary -}}
+      <p class="area-desc">{{- . -}}</p>
+      {{- end -}}
+    </div>
+    {{- end -}}
+  </section>
+  {{- end -}}
 </article>
 {{- end -}}

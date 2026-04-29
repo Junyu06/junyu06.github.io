@@ -15,6 +15,13 @@ theme = "paper"
   github = "Junyu06"
   linkedin = "junyu1928"
   email = "junyu1928@gmail.com"
+  mainSections = ["blog"]
+
+[permalinks]
+  [permalinks.page]
+    blog = "/blog/:year-:month-:day-:slug/"
+  [permalinks.section]
+    blog = "/blog/"
 
 [menu]
   [[menu.main]]
@@ -23,27 +30,22 @@ theme = "paper"
     url = "/"
     weight = 1
   [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
     identifier = "projects"
     name = "Projects"
     url = "/projects/"
-    weight = 2
-  [[menu.main]]
-    identifier = "experience"
-    name = "Experience"
-    url = "/experience/"
-    weight = 3
-  [[menu.main]]
-    identifier = "education"
-    name = "Education"
-    url = "/education/"
     weight = 4
-  [[menu.main]]
-    identifier = "resume"
-    name = "Resume"
-    url = "/resume/"
-    weight = 5
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 6
+    weight = 5

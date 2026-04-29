@@ -8,6 +8,10 @@
   </url><url>
     <loc>http://localhost:1313/projects/safeclick/</loc>
   </url><url>
+    <loc>http://localhost:1313/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/blog/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
@@ -19,8 +23,6 @@
     <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/llm-summarization/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
   </url><url>
