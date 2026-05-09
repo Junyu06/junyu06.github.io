@@ -279,3 +279,90 @@ main {
   height: 100%;
   display: block;
 }
+
+/* Bilingual blog posts */
+.language-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 2rem;
+  padding: 0.18rem;
+  border: 1px solid #d4d4d8;
+  border-radius: 0.7rem;
+  background: #f4f4f5;
+}
+
+.language-toggle__button {
+  appearance: none;
+  border: 0;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: #52525b;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.5rem 0.7rem;
+  transition: background-color 0.16s ease, color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.language-toggle__button:hover {
+  color: #18181b;
+}
+
+.language-toggle__button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.language-toggle__button.is-active {
+  background: #ffffff;
+  color: #09090b;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.12);
+}
+
+.bilingual-body[hidden] {
+  display: none !important;
+}
+
+.bilingual-body > * {
+  margin: 0;
+}
+
+.bilingual-body > * + * {
+  margin-top: 1.25rem;
+}
+
+.bilingual-body > h2 {
+  margin-top: 2.75rem;
+}
+
+.bilingual-body > h2 + * {
+  margin-top: 1rem;
+}
+
+.dark .language-toggle {
+  border-color: #3f3f46;
+  background: #18181b;
+}
+
+.dark .language-toggle__button {
+  color: #a1a1aa;
+}
+
+.dark .language-toggle__button:hover {
+  color: #fafafa;
+}
+
+.dark .language-toggle__button.is-active {
+  background: #27272a;
+  color: #fafafa;
+  box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-toggle__button {
+    transition: none;
+  }
+}
